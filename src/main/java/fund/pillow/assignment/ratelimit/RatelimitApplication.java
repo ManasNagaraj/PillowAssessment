@@ -23,19 +23,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 @ComponentScan(basePackages = {"fund.pillow.assignment.ratelimit.**"})
 @EntityScan(basePackages = {"fund.pillow.assignment.ratelimit.**"})
 public class RatelimitApplication {
-
-//    @Autowired
-//    private ReactiveRedisTemplate<String, Long> redisTemplate;
-//
-//    @Bean
-//    RouterFunction<ServerResponse> routes() {
-//        RateResponseModel model = new RateResponseModel();
-//        model.setRequestCount(1000);
-//
-//
-//        return route() //
-//                .GET("/fund/pillow/count/test" + "", request -> ServerResponse.ok().contentType(MediaType.APPLICATION_JSON).body(BodyInserters.fromValue(model))).filter(new WebfluxFilter(redisTemplate)).build();
-//    }
+    
 
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(RatelimitApplication.class);
